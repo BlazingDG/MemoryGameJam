@@ -47,7 +47,7 @@ public class BaseAI : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(transform.right * moveSpeed);
         }
         //If player is higher than AI, jump
-        if(playerPosition.position.y > transform.position.y){
+        if(playerPosition.position.y > transform.position.y+1f){
             Jump();
         }
     }
